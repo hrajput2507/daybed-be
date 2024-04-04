@@ -19,6 +19,8 @@ const fileUpload = (req, res) => {
   const bb = busboy({ headers: req.headers });
   bb.on("file", (name, file, info) => {
     const { filename, mimeType } = info;
+  console.log("🚀 ~ process.env.ACCESS_KEY_ID:", process.env.ACCESS_KEY_ID)
+
     if (
       mimeType != "image/png" &&
       mimeType != "image/jpg" &&

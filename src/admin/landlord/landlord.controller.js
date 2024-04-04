@@ -37,7 +37,7 @@ async function create(req, res) {
             result = await service.createlandlord({
                 ...req.body,
                 role: "landlord",
-                password: "Qwerty@123",
+                password: "$2b$10$hFD5QK0OJFvVvoTsNBzIk.bM3MqQGZFr2r8/0VEmfKvVyZAtC4r2G", //Qwerty@123
             });
 
         }
